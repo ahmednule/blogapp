@@ -1,0 +1,175 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.nav a {
+  margin-left: 15px;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.nav a:hover {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.nav a.login-btn,
+.nav a.register-btn {
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.nav a.login-btn {
+  background-color: #27ae60;
+}
+
+.nav a.register-btn {
+  background-color: #27ae60;
+}
+
+.nav a.register-btn:hover,
+.nav a.login-btn:hover {
+  background-color: #1e8449;
+}
+
+/* Full Page Hero Section */
+.photo-stack {
+  position: relative;
+  text-align: center;
+  color: white;
+  background: url('./images/project_image.png') no-repeat center center/cover;
+  width: 100vw; /* Ensures full viewport width */
+  height: 100vh;  /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0; /* Remove any default margins */
+}
+
+.photo-stack img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.photo-text {
+  position: relative;
+  z-index: 10;
+  max-width: 600px;
+  text-align: center;
+  padding: 20px;
+}
+
+.photo-text h1 {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.photo-text p {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+/* Section Styles */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  color: #27ae60;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Chat Button */
+.chat-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chat-btn:hover {
+  background-color: #1e8449;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .photo-text h1 {
+    font-size: 3rem;
+  }
+
+  .photo-text p {
+    font-size: 1.2rem;
+  }
+
+  .nav a {
+    font-size: 1rem;
+  }
+}

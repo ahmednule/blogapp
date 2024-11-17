@@ -1,0 +1,76 @@
+/* Container for the resume generator */
+.resume-generator-container {
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Button styling */
+.generate-resume-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.generate-resume-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Missing fields warning */
+.missing-fields-warning {
+    color: #ff6f61;
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.missing-fields-warning p {
+    font-weight: 600;
+}
+
+.missing-fields-warning ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Resume content styling */
+.resume-content {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.resume-content h2 {
+    font-size: 1.8rem;
+    color: #ff6f61;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.resume-content h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+.resume-content p,
+.resume-content ul {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.resume-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.resume-content a:hover {
+    text-decoration: underline;
+}
